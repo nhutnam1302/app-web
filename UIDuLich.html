@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="DuLich.css"> 
+        <title>Du Lịch Đồng Tháp - Trang chủ</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <header>
+        <div>
+            <div class="topnav">
+                <a href="#"> <b>ĐỊA ĐIỂM </b></a>
+                <a href="#"> <b>ĂN UỐNG </b></a>
+                <a href="#"> <b>LƯU TRÚ </b></a>
+                <a href="#"> <b>ĐẶC SẢN </b></a>
+                <a href="#"> <b>PHẢN HỒI </b></a>
+              </div>
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="anh/anh-1-4-2.jpg" style="width:100%">
+                  <div class="text">Làng Hoa Sa Đéc</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="anh/chua-ba-thien-hau-sa-dec-1.jpg" style="width:100%">
+                  <div class="text">Chùa Bà Thiên Hậu</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="anh/tràm-chim-1024x576-1.jpg" style="width:100%">
+                  <div class="text">Vườn Quốc Gia Tràm Chim</div>
+                </div>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+        </div>
+    </header>
+    <body>
+        <div class="topnav1">
+            <a href="#"> <b>ĐỊA ĐIỂM LÝ THÚ </b></a>
+            <a href="#"> <b>ĂN UỐNG THỎA THÍCH </b></a>
+            <a href="#"> <b>NƠI LƯU TRÚ </b></a>
+            <a href="#"> <b>ĐẶC SẢN ĐỒNG THÁP </b></a>
+          </div>
+        <div class="row">
+            <h2 style="color:#FF5722">GỢI Ý CHO BẠN
+            <hr style="width: 100%"> </h2>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/lang-hoa-sa-dec-4.jpg" />
+                   <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                        <b>Làng Hoa Sa Đéc</b>
+                        <br>
+                    </p>
+                    <p style="color: black; margin-left: 40px; font-size: 15px;">
+                        <b><i>Tân Qui Đông - Sa Đéc - Đồng Tháp</i></b>
+                    </p>
+            </div>
+          
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/foody-mobile-28-jpg-372-635688579347065436.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Khu Di Tích Cụ Phó Bảng Nguyễn Sinh Sắc</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Phường 4 - Thành phố Cao Lãnh - Đồng Tháp</i></b>
+                </p>
+            </div>
+          
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/khu-du-lịch.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Nam Phương Linh Từ</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px; margin-bottom: 30px">
+                    <b><i>Long Hưng A - Lấp Vò - Đồng Tháp</i></b>
+                </p>
+            </div>
+        </div>
+
+
+          
+        <div class="row">
+            <div>
+                <h2 style="color:#FF5722">DU LỊCH SINH THÁI
+                    <a href="test.html" style="float: right; padding-right: 20px;"> <b><i>Xem tất cả ></i></b> </a>
+                    <hr style="width: 88%;">
+                </h2>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/gao-giong-mo-vang-1.jpg"/>
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Gáo Giồng</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Xã Gáo Giồng - Huyện Cao Lãnh - Đồng Tháp</i></b>
+                </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/khu-du-lich-Xeo-Quyt.jpg"/>
+                   <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                        <b>Xẻo Quýt</b>
+                        <br>
+                    </p>
+                    <p style="color: black; margin-left: 40px; font-size: 15px;">
+                        <b><i>Mỹ Hiệp - Huyện Cao Lãnh - Đồng Tháp</i></b>
+                    </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/Đồng-sen-tháp-mười-e1564519351452.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <a href="kiemtra.html"> <b>Đồng Sen Tháp Mười</b></a>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Tân Kiều - Huyện Tháp Mười - Đồng Tháp</i></b>
+                </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/tràm-chim-1024x576-1.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Tràm Chim</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Thị trấn Tràm Chim - Huyện Tam Nông - Đồng Tháp</i></b>
+                </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/khu-du-lich-my-phuoc-thanh-02.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Mỹ Phước Thành</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px; margin-bottom: 30px;">
+                    <b><i>Mỹ Phú - Thành phố Cao Lãnh - Đồng Tháp</i></b>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h2 style="color:#FF5722">CHÙA
+                    <a href="#" style="float: right; padding-right: 20px;"> <b><i>Xem tất cả ></i></b> </a>
+                    <hr style="width: 88%; right: 30px;">
+                </h2>
+                   
+                    
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/kien-an-cung05.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Kiến An Cung</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Phường 2- Thành phố Sa Đéc - Đồng Tháp</i></b>
+                </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/chua-ba-thien-hau-sa-dec-1.jpg" />
+                   <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                        <b>Chùa Bà Thiên Hậu</b>
+                        <br>
+                    </p>
+                    <p style="color: black; margin-left: 40px; font-size: 15px;">
+                        <b><i>Phường 2- Thành phố Sa Đéc - Đồng Tháp</i></b>
+                    </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/9632dfc7-ea8e-4904-b709-5050098ebbbb.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Chùa Phước Long</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Tân Nhuận Đông - Châu Thành - Đồng Tháp</i></b>
+                </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/chua-la-sen.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Chùa Phước Kiển</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px;">
+                    <b><i>Hòa Tân - Châu Thành - Đồng Tháp</i></b>
+                </p>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img src="anh/chua-hoa-long-417847.jpg" />
+                <p style="color: #FF5722; margin-left: 40px; font-size: 20px;">
+                    <b>Chùa Hòa Long</b>
+                    <br>
+                </p>
+                <p style="color: black; margin-left: 40px; font-size: 15px; margin-bottom: 30px">
+                    <b><i>Phường 4- Thành phố Cao Lãnh - Đồng Tháp</i></b>
+                </p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+
+    <footer>
+        <h1> CÔNG TY VĂN HÓA DU LỊCH 3 THÀNH VIÊN </h1>
+        <h3> Liên hệ: 0911 111 111 </h3>
+    </footer>
+</html>

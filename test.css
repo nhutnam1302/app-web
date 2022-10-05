@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Segoe UI;
+}
+body{
+    overflow-x:hidden;
+}
+
+header {
+  background-color: #FFE8E8;
+  color: red;
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  font-family: Segoe UI;
+  padding: 4px;
+  text-align: left;  
+}
+.container .hsqt {
+  position: relative;
+   bottom: -20px; 
+   color: rgb(0, 0, 0);
+   
+}
+
+
+.hsqt select {
+ background-color: #B8E4F0;
+height: 35px;
+width: 100px;
+ color: black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  float: right;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  float: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+background-color: #db7093;
+color: white;
+}
+
+.column {
+float: left;
+width: 33%;
+}
+
+.column img{
+border-radius: 50px;
+padding-top: 20px;
+padding-left: 20px;
+padding-bottom: 5px;
+margin-left: 20px;
+}
+
+.row h2{
+padding-top: 20px;
+padding-left: 20px;
+right:500px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
